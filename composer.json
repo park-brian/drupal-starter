@@ -1,0 +1,27 @@
+{
+    "name": "any/any",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "composer/installers": "^1.5",
+        "drupal/core": "^8.5",
+        "drupal-composer/drupal-scaffold": "^2.4",
+        "drush/drush": "^9.2"
+    },
+    "scripts": {},
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "core": ["type:drupal-core"],
+            "libraries/{$name}": ["type:drupal-library"],
+            "modules/contrib/{$name}": ["type:drupal-module"],
+            "profiles/contrib/{$name}": ["type:drupal-profile"],
+            "themes/contrib/{$name}": ["type:drupal-theme"]
+        }
+    }
+}
