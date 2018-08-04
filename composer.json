@@ -5,7 +5,7 @@
     "require": {
         "composer/installers": "^1.5",
         "drupal/core": "^8.5",
-        "drupal-composer/drupal-scaffold": "^2.4",
+        "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/console": "^1.0",
         "drush/drush": "^9.2"
     },
@@ -17,6 +17,9 @@
         }
     ],
     "extra": {
+        "drupal-scaffold": {
+            "source": "http://cgit.drupalcode.org/drupal/plain/{path}?h={version}"
+        },
         "installer-paths": {
             "core": ["type:drupal-core"],
             "libraries/{$name}": ["type:drupal-library"],
